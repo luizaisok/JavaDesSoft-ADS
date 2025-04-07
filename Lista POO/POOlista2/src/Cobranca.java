@@ -40,18 +40,6 @@ public class Cobranca {
         this.valorTotal = num;
     }
 
-    /*public float multa(float valorBoleto, int diasAtrasados){
-        if(diasAtrasados < 1){
-            return 0;
-        }else{
-            float multa = valorBoleto * 0.05f;
-            for(int i = 0; i < diasAtrasados; i++){
-                float multaTotal = multa * 0.01f;
-            }
-        return multaTotal;
-        }
-    }*/
-
     public float calculaValorTotal(){
         float valorComMulta = valorBoleto + (valorBoleto * 0.05f);
         float valorComJuros = valorComMulta;
